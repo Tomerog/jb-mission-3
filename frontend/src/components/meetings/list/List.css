@@ -1,0 +1,73 @@
+/* Style for the List page container */
+.List {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f7f7f7; /* Light background */
+    min-height: 100vh;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Styling the select dropdown */
+select {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 200px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+/* Dropdown hover and focus effects */
+select:hover,
+select:focus {
+    border-color: #5d9bfb;
+    outline: none;
+}
+
+/* Style for the card container */
+.CardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* Add some margin around each card in the container */
+.Card {
+    width: 300px;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect for the cards */
+.Card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Making sure the cards are responsive on smaller screens */
+@media (max-width: 768px) {
+    .CardContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Card {
+        width: 80%;
+    }
+}
