@@ -25,7 +25,7 @@ export default function Add(): JSX.Element {
     const { register, handleSubmit, formState: { errors }, getValues } = useForm<Draft>()
 
  
-    const validateEndTime = (value: string) => {
+    const validateEndTime = (value: Date) => {
         const startTime = new Date(getValues('meetingStart'))
         const endTime = new Date(value)
 
