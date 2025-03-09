@@ -104,5 +104,5 @@ export default function Add(): JSX.Element {
                 <button type="submit">Add Meeting</button>
             </form>
         </div>
-    )
+    ) 
 }
