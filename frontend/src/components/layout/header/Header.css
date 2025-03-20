@@ -1,0 +1,47 @@
+.Header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.Header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.Header nav {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.Header a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.Header a:hover {
+    background-color: #555;
+    color: #f1f1f1;
+}
+
+.Header .active {
+    color: green;
+    font-weight: bold;
+}
+
+.Header .active:hover {
+    background-color: #444;
+    color: #fff;
+}

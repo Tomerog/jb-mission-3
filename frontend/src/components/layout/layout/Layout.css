@@ -1,0 +1,15 @@
+.Layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 7fr;
+    height: 100%;
+}
+
+.Layout > header {
+    grid-row: 1;
+}
+
+.Layout > main {
+    grid-row: 2 ;
+    overflow: auto;
+}
